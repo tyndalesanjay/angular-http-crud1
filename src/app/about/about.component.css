@@ -1,0 +1,19 @@
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+button {
+    color: white;
+    padding: 2% 4%;
+    background-color: blue;
+    border: none;
+}
+
+button:hover {
+    border: 2px solid blue; 
+    background: transparent; 
+    cursor: pointer;
+    color: black;
+    padding: 2% 4%;
+}

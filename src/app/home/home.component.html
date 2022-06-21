@@ -1,0 +1,23 @@
+<div style="padding: 13px; ">
+    <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+    <div style="display: flex; flex-wrap: wrap; ">
+        <mat-card *ngFor="let product of products" style="margin-top:12px; width: 18vw; margin: 1vw; padding: 19px !important;">
+            <mat-card-header style="height: 5vw;">
+                <mat-card-title style="text-align: center;">{{product.name}}</mat-card-title>
+                <mat-card-subtitle style="text-align: right;">{{product.price}} / {{product.quantity}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div style="height: 5vw; overflow: hidden; text-overflow: ellipsis; ">
+                    <p title="{{product.description}}">
+                        {{product.description}}
+                    </p>
+                </div>
+                <img style="height: 15vw; width: 18vw; margin-left: 1%; border-radius: 3px;" src="{{ product.imageUrl }}" />
+            </mat-card-content>
+            <mat-card-actions style="text-align: center; padding-bottom: 2%;">
+               <button mat-button routerLink="/details/{{product.id}}" style="border: 2px blue solid; border-radius: 3px;">Buy Meal</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

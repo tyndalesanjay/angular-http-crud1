@@ -1,0 +1,27 @@
+<div class="">
+    <mat-card style="display: flex; justify-content: space-evenly; padding: 5vw;">
+        <img src="https://media.discordapp.net/attachments/889362805713678407/988895849415336036/business-office-flatlay-contact-us.jpg?width=864&height=576" alt="" style="width: 35%; height: 30vw;">
+
+        <form class="form">
+            <h1 style="font-size: xxx-large; margin: 2vw;">Contact Us</h1>
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Full Name</mat-label>
+                <input matInput>
+            </mat-form-field><br>
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput>
+            </mat-form-field><br>
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Message</mat-label>
+              <input matInput #message maxlength="156" placeholder="Ex. I need help/information with...">
+              <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+              <mat-hint align="end">{{message.value.length}} / 156</mat-hint>
+            </mat-form-field>
+            <div style="text-align: right; margin: 2vw 2vw;">
+                <button mat-raised-button color="primary">Primary</button>
+            </div>
+        </form>
+    </mat-card>
+    
+</div>

@@ -1,0 +1,21 @@
+<div style="padding: 20px;">
+    <mat-card style="margin-top:12px; width: 80%;  margin: auto; padding: 19px !important;">
+        <mat-card-content style="display: flex; justify-content: space-evenly;">
+            <img style="width: 40%; margin-left: 1%; border-radius: 3px;" src="{{products.imageUrl}}" />
+            <div style="width: 30vw;">
+                <mat-card-title>
+                    <h2>{{products.name}}</h2>
+                </mat-card-title>
+                <p>
+                    ${{products.price}} / {{products.quantity}}
+                </p>
+                <p >
+                    {{products.description}}
+                </p>                
+            </div>
+        </mat-card-content>
+        <mat-card-actions style="text-align: right; padding-bottom: 2%; flex: none; margin: 0 2vw;">
+            <button mat-button routerLink="/completed" style="border: 2px blue solid; border-radius: 3px;">Order Now</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
