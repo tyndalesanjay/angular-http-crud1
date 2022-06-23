@@ -20,7 +20,7 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.sendGetDetails(this.id).subscribe((data:any[]) => {
-      this.products = data[this.detail];
+      this.products = data[this.detail-1];
     })
 
     this.route.paramMap.subscribe((params: ParamMap) => {
